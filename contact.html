@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — DojoGestion</title>
+<meta name="description" content="Demandez une démo de DojoGestion ou posez-nous vos questions — réponse sous 48h.">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/icon-mark.png" alt="">
+      <span class="nav-logo-text"><span class="part-dojo">Dojo</span><span class="part-gestion">Gestion</span></span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="fonctionnalites.html">Fonctionnalités</a>
+      <a href="tarifs.html">Tarifs</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost">Se connecter</a>
+      <a href="contact.html" class="btn btn-primary">Demander une démo</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom: 24px;">
+  <svg class="hero-enso" viewBox="0 0 400 400" aria-hidden="true">
+    <path d="M 200 40 A 160 160 0 1 1 55 130" fill="none" stroke="#D98E2B" stroke-width="26" stroke-linecap="round" opacity="0.14"/>
+  </svg>
+  <div class="container">
+    <div class="hero-inner">
+      <span class="eyebrow">Contact</span>
+      <h1>Parlons de votre club</h1>
+      <p class="lead">Une question, un devis, une démo — laissez-nous vos coordonnées, on vous répond sous 48h.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-grid">
+      <form class="form-card" id="contact-form" novalidate>
+        <div class="field">
+          <label for="nom">Nom et prénom <span class="req">*</span></label>
+          <input type="text" id="nom" name="nom" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="nom_club">Nom du club</label>
+          <input type="text" id="nom_club" name="nom_club" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Nombre de licenciés, besoins particuliers, questions..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Envoyer la demande</button>
+        <div class="form-status" id="form-status"></div>
+      </form>
+
+      <div>
+        <div class="contact-info-item">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6 12 13 2 6"/><path d="M2 6h20v12H2z"/></svg></div>
+          <div>
+            <h3 class="mt-0">Par email</h3>
+            <p><a href="mailto:contact@dojogestion.fr">contact@dojogestion.fr</a></p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <h3 class="mt-0">Une démo en direct</h3>
+            <p>15 minutes suffisent pour voir si DojoGestion correspond à votre club — on s'adapte à votre disponibilité.</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div>
+            <h3 class="mt-0">Réponse rapide</h3>
+            <p>On vous répond sous 48h, souvent bien plus vite.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <img src="assets/icon-mark.png" alt="">
+          <span class="footer-logo-text"><span class="part-dojo">Dojo</span><span class="part-gestion">Gestion</span></span>
+        </div>
+        <p class="footer-tag">L'application de gestion pour les clubs d'arts martiaux — conçue par un club, pour les clubs.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Produit</h4>
+          <a href="fonctionnalites.html">Fonctionnalités</a>
+          <a href="tarifs.html">Tarifs</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="contact.html">Demander une démo</a>
+          <a href="mailto:contact@dojogestion.fr">contact@dojogestion.fr</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-social">
+      <!-- Remplacez # par vos vraies pages une fois créées -->
+      <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
+      </a>
+      <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 DojoGestion. Tous droits réservés.</span>
+      <span>Fait pour les clubs d'arts martiaux, en France.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
